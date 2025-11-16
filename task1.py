@@ -1,9 +1,5 @@
-#!/usr/bin/env python3
-"""
-Simple CLI Calculator App
-Author: Your Name
-Description: A basic command-line calculator for simple arithmetic operations.
-"""
+
+
 
 import sys
 
@@ -32,7 +28,7 @@ def main():
 
             # Exit condition
             if user_input.lower() == "exit":
-                print("Goodbye! 👋")
+                print("Goodbye! ")
                 sys.exit(0)
 
             # Split input
@@ -61,14 +57,15 @@ def main():
             elif op == "/":
                 result = divide(a, b)
             else:
-                print(f"❌ Unsupported operator: {op}")
+                print(f" Unsupported operator: {op}")
                 continue
 
-            print(f"✅ Result: {result}\n")
+            print(f" Result: {result}\n")
 
         except KeyboardInterrupt:
-            print("\nGoodbye! 👋")
+            print("\nGoodbye! ")
             sys.exit(0)
 
 if __name__ == "__main__":
     main()
+
